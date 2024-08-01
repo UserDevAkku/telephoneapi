@@ -25,6 +25,7 @@ let Hint=document.querySelector(".Hint")
 let CharFinal;
 let n = 10;
 let i;
+
 let num;
 let getPHN;
 let showIMG;
