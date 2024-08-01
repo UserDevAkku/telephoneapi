@@ -125,7 +125,7 @@ form {
 }
 
 .search_bar {
-    background:white;
+    background: white;
     outline: none;
     border: none;
     height: 65%;
@@ -135,7 +135,7 @@ form {
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 10px;
-box-shadow: 0 0 2px 2px black inset;
+    box-shadow: 0 0 2px 2px black inset;
 }
 
 .btns {
@@ -212,7 +212,7 @@ box-shadow: 0 0 2px 2px black inset;
     height: 20px;
     width: 38px;
     filter: contrast(1);
-    background-color:white  ;
+    background-color: white;
     box-shadow: 0 0 2px 2px black inset;
 }
 
@@ -259,32 +259,36 @@ box-shadow: 0 0 2px 2px black inset;
     background-color: transparent;
 }
 
+.msgs {
+    height: max-content;
+    width: max-content;
+}
+
 #msg {
 
     text-align: center;
     padding: 2px;
-    color: white;
+    color: beige;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10px;
-    text-transform: capitalize;
-    
+
 
 }
 
 @keyframes status {
     0% {
-        color: white;
-        opacity: 0.30;
+        color: #FF671F;
+
     }
 
     50% {
-        color: white;
-        opacity: 0.50;
+        color: #FFFFFF;
+
     }
 
     100% {
-        color: white;
-        opacity: 1;
+        color: #046A38;
+
     }
 
 }
@@ -342,7 +346,7 @@ box-shadow: 0 0 2px 2px black inset;
     color: black;
     font-size: 10px;
     background-color: white;
-    text-align:center;
+    text-align: center;
     padding: 5px;
     font-family: sans-serif;
     box-shadow: 0 0 2px 2px black inset;

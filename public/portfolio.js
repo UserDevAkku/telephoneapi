@@ -20,6 +20,8 @@ let brightcyan = document.getElementById("brightcyan");
 let searchbar = document.querySelector(".search_bar")
 let colorPicker = document.querySelector(".colorPicker")
 let codes = document.querySelector(".codes")
+let msgs=document.querySelector(".msgs")
+let Hint=document.querySelector(".Hint")
 let CharFinal;
 let n = 10;
 let i;
@@ -34,7 +36,7 @@ getPHN = () => {
     searchbar.value += num
 }
 showIMG = () => {
-    let Num = Math.floor(Math.random() * 196)
+    let Num = Math.floor(Math.random() * 195)
     // Country code  
     let apiUrl = `https://countryflagsapi.netlify.app/flag/${country_code[Num]}.svg`;
     alphaNum = country_code[Num];
@@ -45,6 +47,13 @@ showIMG = () => {
     IMGs.style.backgroundSize = "cover"
     IMGs.style.objectFit = "cover"
     codes.innerHTML = `${alpha[alphaNum]}`
+    msg.innerHTML=`${CountryNames[alphaNum]}`
+    msg.style.fontWeight="bolder"
+    msg.style.animation="status 1s ease-in-out infinity alternative"
+    msg.style.fontSize="12"
+    msgs.style.backgroundColor="black"
+    Hint.style.boxShadow="0 0 4px 4px white inset"
+    msg.style.textTransformation="uppercase"
 }
 
 get.addEventListener("click", function () {
