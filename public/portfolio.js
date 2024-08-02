@@ -22,6 +22,7 @@ let colorPicker = document.querySelector(".colorPicker")
 let codes = document.querySelector(".codes")
 let msgs=document.querySelector(".msgs")
 let Hint=document.querySelector(".Hint")
+let msg2=document.querySelector("#msg2");
 let CharFinal;
 let n = 10;
 let i;
@@ -48,13 +49,9 @@ showIMG = () => {
     IMGs.style.backgroundSize = "cover"
     IMGs.style.objectFit = "cover"
     codes.innerHTML = `${alpha[alphaNum]}`
-    msg.innerHTML=`${CountryNames[alphaNum]}`
-    msg.style.fontWeight="bolder"
-    msg.style.animation="status 1s ease-in-out infinity alternative"
-    msg.style.fontSize="12"
-    msgs.style.backgroundColor="black"
-    Hint.style.boxShadow="0 0 4px 4px white inset"
-    msg.style.textTransformation="uppercase"
+    msg2.innerHTML=`${CountryNames[alphaNum]}`
+    msg2.style.animation=" status 1s ease-in-out infinite alternate"
+    msg2.style.textTransformation="uppercase"
 }
 
 get.addEventListener("click", function () {
@@ -70,6 +67,7 @@ reset.addEventListener("click", () => {
         searchbar.value = ""
         IMGs.style.backgroundImage = ""
         codes.innerText = ""
+        msg2.innerHTML=""
         get.disabled = false;
     }
     else {
@@ -127,6 +125,9 @@ reset.addEventListener("mouseout", () => {
 })
 save.addEventListener("mouseout", () => {
     msg.innerHTML = ""
+})
+codes.addEventListener("mouseout",()=>{
+    msg.innerHTML=""
 })
 searchbar.addEventListener("mouseout", () => {
     msg.innerHTML = ""

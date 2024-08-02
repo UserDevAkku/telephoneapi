@@ -111,7 +111,7 @@ body {
 .content {
     display: flex;
     flex-wrap: wrap;
-    height: 90px;
+    height: 120px;
     width: 180px;
     text-align: center;
     background-color: transparent;
@@ -135,7 +135,7 @@ form {
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 10px;
-    box-shadow: 0 0 2px 2px black inset;
+    box-shadow: 0 0 3px 1px aquamarine;
 }
 
 .btns {
@@ -213,7 +213,7 @@ form {
     width: 38px;
     filter: contrast(1);
     background-color: white;
-    box-shadow: 0 0 2px 2px black inset;
+    box-shadow: 0 0 3px 1px aquamarine;
 }
 
 #get {
@@ -349,5 +349,22 @@ form {
     text-align: center;
     padding: 5px;
     font-family: sans-serif;
-    box-shadow: 0 0 2px 2px black inset;
+    box-shadow: 0 0 3px 1px aquamarine;
+}
+button title{
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    text-transform: lowercase;
+}
+.msgs2{
+    height: 30px;
+    width: 100%;
+    background: transparent;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
 }
