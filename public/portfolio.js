@@ -52,6 +52,7 @@ showIMG = () => {
     msg2.innerHTML=`${CountryNames[alphaNum]}`
     msg2.style.animation=" status 1s ease-in-out infinite alternate"
     msg2.style.textTransformation="uppercase"
+
 }
 
 get.addEventListener("click", function () {
